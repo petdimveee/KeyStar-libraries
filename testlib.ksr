@@ -1,0 +1,5 @@
+//title TestLib ;
+/#this is a test library ;
+def test :
+let temp = 1234 ;
+:end ;

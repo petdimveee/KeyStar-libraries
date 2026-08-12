@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "KeyStar",
+  "scopeName": "source.keystar",
+  "fileTypes": ["ksr"],
+  "patterns": [
+    {
+      "name": "keyword.other.header.keystar",
+      "match": "\\/\\/(?:lib|title)"
+    },
+    {
+      "name": "comment.line.keystar",
+      "match": "\\/#.*"
+    },
+    {
+      "name": "keyword.control.directive.keystar",
+      "match": "#define|#alias|#flag|#ifdef|#ifndef|#endif"
+    },
+    {
+      "name": "entity.name.function.keystar",
+      "match": "\\b(?:def|call)\\b"
+    },
+    {
+      "name": "keyword.control.keystar",
+      "match": "\\b(?:if|math|temptovar|set|let|swap|load|store|inc|dec|zero|none|goto)\\b"
+    },
+    {
+      "name": "variable.other.secondary.keystar",
+      "match": "\\b(?:reg|var)\\b|\\.(?:ram|vram|aram)\\b"
+    },
+    {
+      "name": "entity.name.label.keystar",
+      "match": "\\blb\\s+[a-zA-Z0-9_]+|\\bgoto\\s+lb\\s+[a-zA-Z0-9_]+"
+    },
+    {
+      "name": "keyword.operator.tertiary.keystar",
+      "match": "\\bat\\b"
+    },
+    {
+      "name": "constant.numeric.keystar",
+      "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "punctuation.separator.symbol.keystar",
+      "match": ":end\\b|[:;=]"
+    }
+  ]
+}
